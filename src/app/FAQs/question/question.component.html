@@ -1,0 +1,19 @@
+<div>
+    <div class="flex flex-row justify-between">
+        <p class="text-white text-xl py-[20px] font-semibold">{{question()?.title}}</p>
+        @if(question()?.isExpanded) {
+            <button (click)="onExpandText()">
+                <app-icons [iconPrefix]="'fas'" [iconName]="'minus'" [size]="'lg'" [classes]="'text-white h-[20px] '" />
+            </button>  
+        } @else {
+            <button (click)="onExpandText()">
+                <app-icons [iconPrefix]="'fas'" [iconName]="'plus'" [size]="'lg'" [classes]="'text-white h-[20px] '" />
+            </button>  
+        }
+    </div>
+    @if(question()?.isExpanded) {
+        <p class=" text-gray-500 text-lg pb-[20px]">{{question()?.answer}}</p>
+    }
+    <div class="border-t border-gray-500 w-full mt-2"></div>
+</div>
+
