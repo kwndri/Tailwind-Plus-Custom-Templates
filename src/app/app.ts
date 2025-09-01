@@ -11,6 +11,8 @@ import { PricingDescriptionComponent } from './Pricing-Pages/pricing-description
 import { PricingListComponent } from './Pricing-Pages/pricing-list-component/pricing-list-component';
 import { FAQComponent } from './Pricing-Pages/faq-component/faq-component';
 import { FooterComponent } from './Pricing-Pages/footer-component/footer-component';
+import { FirstCtaSectionComponent } from './CTA-Sections/first-cta-section-component/first-cta-section-component';
+import { SecondCtaSectionComponent } from './CTA-Sections/second-cta-section-component/second-cta-section-component';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +28,8 @@ import { FooterComponent } from './Pricing-Pages/footer-component/footer-compone
     PricingListComponent,
     FAQComponent,
     FooterComponent,
+    FirstCtaSectionComponent,
+    SecondCtaSectionComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
