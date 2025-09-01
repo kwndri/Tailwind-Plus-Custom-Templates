@@ -8,3 +8,15 @@ export interface SecondFAQQuestion {
   title: string;
   answer: string;
 }
+
+export interface PriceSubscription {
+  title: string;
+  description: string;
+  price: TimeSubscription;
+  characteristics: string[];
+}
+
+interface TimeSubscription {
+  monthly: number;
+  yearly: number;
+}

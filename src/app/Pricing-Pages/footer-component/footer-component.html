@@ -1,0 +1,23 @@
+<footer class=" pt-[100px] px-8">
+    <hr class=" h-[2px] border-gray-300 w-full border-t mb-[80px]" />
+    <div class="grid text-black grid-cols-[1fr_3fr] mb-[100px]">
+        <div class=" flex flex-col gap-[40px] ">
+             <img src="Tailwind_CSS_Logo.svg.png" class="w-[40px] h-[40px] object-contain">
+            <p class="text-gray-500 ">Making the world a better place through constructing elegant hierarchies</p>
+        </div>
+        <div class="flex flex-row gap-10 justify-evenly">
+            @for(link of links; track link.title) {
+                <div class="flex flex-col gap-5">
+                    <h3 class=" font-bold mb-4 ">{{link.title}}</h3>
+                    @for(content of link.contentLinks; track content.title) {
+                        <a class="text-gray-800 hover:text-black" href="{{content.href}}">{{content.title}}</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+    <hr class="mt-10 h-[2px] border-gray-300 w-full border-t mb-[20px]" />
+    <div class="flex flex-row">
+        <p class="text-gray-500 text-lg pb-[25px]">&copy; Your Company, Inc. All rights reserved.</p>
+    </div>
+</footer>

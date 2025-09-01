@@ -11,6 +11,7 @@ import {
   faBriefcase,
   faLocationDot,
   faArrowRight,
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,6 +26,7 @@ export function addIcons(library: FaIconLibrary) {
     faBookmark,
     faArrowRight,
     faPlus,
-    faMinus
+    faMinus,
+    faCheck
   );
 }

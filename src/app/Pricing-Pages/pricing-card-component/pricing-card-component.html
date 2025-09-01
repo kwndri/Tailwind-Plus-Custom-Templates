@@ -1,0 +1,30 @@
+<div class="mx-auto px-[10px] max-w-[400px] sm:px-[30px] h-[550px]  sm:max-w-[500px] lg:max-w-[400px] xl:max-w-[350px] border-2 rounded-2xl  pt-[50px] pb-[80px] flex flex-col gap-5" [ngClass]="price_option()?.title==='Startup' ? 'border-purple-700' : 'border-gray-200'">
+    @if(price_option()?.title==='Startup') {
+        <div class="flex flex-row justify-between">
+            <h1 class="font-bold text-xl text-purple-500">{{price_option()?.title}}</h1>
+            <p class="border border-1 font-semibold rounded-full bg-gray-100 p-2 text-purple-500">Most popular</p>
+        </div>
+    }@else{
+        <h1 class="font-bold text-xl">{{price_option()?.title}}</h1>
+    }
+    
+    <p class="text-gray-600">{{price_option()?.description}}</p>
+    <div class="flex flex-row gap-1">
+        @if(payment_option()==='monthly'){
+            <p class="text-4xl font-bold">${{price_option()?.price?.monthly}}</p>
+        }@else {
+            <p class="text-4xl font-bold">${{price_option()?.price?.yearly}}</p>
+        }
+        <span class="text-gray-500 self-end font-semibold">/month</span>
+    </div>
+    <button class="w-full p-2  text-center  font-semibold border rounded-md " [ngClass]="price_option()?.title==='Startup' ? ' text-white bg-indigo-500 hover:bg-indigo-400 transition-colors' : 'border-blue-200 text-blue-600 hover:border-blue-400 transition-colors'">Buy plan</button>
+    <div class="flex flex-col gap-2">
+        @for(characteristic of price_option()?.characteristics; track characteristic) {
+            <div class="flex flex-row gap-1">
+                <app-icons [iconPrefix]="'fas'" [iconName]="'check'" [size]="'1x'" [classes]="'text-blue-500 pr-2'"></app-icons>
+                <p class="text-gray-600">{{characteristic}}</p>
+            </div>
+        }
+        
+    </div>
+</div>
