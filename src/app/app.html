@@ -1,3 +1,5 @@
+
+<!-- HTML for page section
 <div class="border border-1 border-gray-300 rounded-xl m-3 pl-[20px] pr-[20px]">
     <div class="mx-auto">
          <app-header-component></app-header-component>
@@ -8,7 +10,12 @@
         <app-footer-component></app-footer-component>
     </div>
 </div>
+-->
 
-<app-first-cta-section-component></app-first-cta-section-component>
-<app-second-cta-section-component></app-second-cta-section-component>
+<app-first-menu-component [menu]="[{
+    title:'Engagement',
+    submenu:['About', 'Customers', 'Press', 'Careers', 'Privacy']
+   },
+   {title:'Resources',
+    submenu:['Community', 'Partners', 'Guides', 'Webinaes']}]  "></app-first-menu-component>
 

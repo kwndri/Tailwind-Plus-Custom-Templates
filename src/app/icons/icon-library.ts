@@ -14,6 +14,7 @@ import {
   faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export function addIcons(library: FaIconLibrary) {
   library.addIcons(
@@ -27,6 +28,7 @@ export function addIcons(library: FaIconLibrary) {
     faArrowRight,
     faPlus,
     faMinus,
-    faCheck
+    faCheck,
+    faChevronDown
   );
 }

@@ -1,0 +1,61 @@
+<div class="bg-gray-100 border border-gray-300 rounded-lg  h-[1500px] ">
+    <div class=" bg-white rounded-t-lg border border-gray-300">
+        <div class="flex flex-row font-semibold text-black md:w-[96%] w-[90%] mx-auto ">
+            <button class=" py-[3vh] " (click)="onExpandMenu()">Solutions
+                <span><app-icons [iconPrefix]="'fas'" [iconName]="'chevron-down'" [size]="'sm'" [classes]="'text-black ml-1'" /></span>
+            </button>
+            <p class="flex-1"></p>
+        </div>
+     @if(isExpanded()) {
+        <div class="mt-[30px] md:w-[96%] w-[90%] mx-auto mb-[40px] ">
+            <div class="xl:grid xl:grid-cols-2 xl:gap-3 ">
+                <div class="grid grid-cols-2 gap-3 cursor-pointer">
+                    @for(menu of menu(); track menu.title){
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-gray-400 font-semibold mb-[10px]">{{menu.title}}</h3>
+                            @for(item of menu.submenu; track item){
+                                <p class="text-black font-semibold">{{item}}</p>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="xl:grid xl:grid-cols-2 xl:gap-[1vw] ">
+                    <div class=" xl:flex xl:flex-col xl:gap-2 xl:mt-[0px] xl:w-[20vw] md:w-[70vw] cursor-pointer md:flex md:flex-row gap-[3vw] mt-[5vh]">
+                        <div class="md:w-1/2 xl:w-full">
+                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                            class="xl:h-[10vw] h-[160px] w-full xl:w-full object-cover rounded-lg mb-[10px] ">
+                        </div>
+                        <div class="md:w-1/2 flex flex-col gap-3 xl:gap-2  xl:mt-[0px] mt-[20px] xl:w-full">
+                            <div class="flex flex-row gap-[2vw]">
+                                <p class="text-gray-500 text-xs md:text-sm">{{ '2023-03-16' | date:'MMM d, y' }}</p>
+                                <span class="px-2 py-[2px] text-xs md:text-sm font-semibold bg-gray-200 text-gray-400 rounded-lg">Marketing</span>
+                            </div>
+                            <h3 class="text-black font-bold">Boost your conversion rate</h3>
+                            <p class="text-gray-500 text-xs md:text-sm w-full text-justify">Et et dolore officia quis nostrud esse aute cillum irure do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
+                        </div>
+                            
+                    </div>
+                    <div class=" xl:flex xl:flex-col xl:gap-2 xl:mt-[0px] xl:w-[20vw] md:w-[70vw] cursor-pointer md:flex md:flex-row md:gap-[3vw] mt-[5vh]">
+                        <div class="md:w-1/2 xl:w-full">
+                            <img src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+                            class="xl:h-[10vw] h-[160px] w-full xl:w-full object-cover rounded-lg mb-[10px] ">
+                        </div>
+                        <div class="md:w-1/2 flex flex-col gap-3 xl:gap-2 md:mt-[10px] xl:mt-[0px] mt-[20px] xl:w-full">
+                            <div class="flex flex-row gap-[2vw]">
+                                <p class="text-gray-500 text-xs md:text-sm">{{ '2023-03-10' | date:'MMM d, y' }}</p>
+                                <span class="px-2 py-[2px] text-xs md:text-sm font-semibold bg-gray-200 text-gray-400 rounded-lg">Sales</span>
+                            </div>
+                            <h3 class="text-black text-xs md:text-sm font-bold">How to use search engine optimization to drive sales</h3>
+                            <p class="text-gray-500 text-xs md:text-sm w-full text-justify">Optio cum necessitatibus dolor voluptatum provident commodi et.</p>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    </div> 
+</div>
+
+
+

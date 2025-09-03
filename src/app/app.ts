@@ -13,6 +13,7 @@ import { FAQComponent } from './Pricing-Pages/faq-component/faq-component';
 import { FooterComponent } from './Pricing-Pages/footer-component/footer-component';
 import { FirstCtaSectionComponent } from './CTA-Sections/first-cta-section-component/first-cta-section-component';
 import { SecondCtaSectionComponent } from './CTA-Sections/second-cta-section-component/second-cta-section-component';
+import { FirstMenuComponent } from './Flyout-Menus/first-menu-component/first-menu-component';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,7 @@ import { SecondCtaSectionComponent } from './CTA-Sections/second-cta-section-com
     FooterComponent,
     FirstCtaSectionComponent,
     SecondCtaSectionComponent,
+    FirstMenuComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

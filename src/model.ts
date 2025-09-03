@@ -20,3 +20,8 @@ interface TimeSubscription {
   monthly: number;
   yearly: number;
 }
+
+export interface Menu {
+  title: string;
+  submenu: string[];
+}
