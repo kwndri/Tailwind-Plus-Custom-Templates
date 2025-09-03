@@ -25,3 +25,11 @@ export interface Menu {
   title: string;
   submenu: string[];
 }
+
+export interface ImageMenu {
+  src: string;
+  date: string;
+  department: string;
+  title: string;
+  description: string;
+}

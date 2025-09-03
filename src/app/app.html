@@ -12,10 +12,33 @@
 </div>
 -->
 
-<app-first-menu-component [menu]="[{
-    title:'Engagement',
-    submenu:['About', 'Customers', 'Press', 'Careers', 'Privacy']
-   },
-   {title:'Resources',
-    submenu:['Community', 'Partners', 'Guides', 'Webinaes']}]  "></app-first-menu-component>
+<app-first-menu-component 
+  [menu]="[
+    {
+      title: 'Engagement',
+      submenu: ['About', 'Customers', 'Press', 'Careers', 'Privacy']
+    },
+    {
+      title: 'Resources',
+      submenu: ['Community', 'Partners', 'Guides', 'Webinaes']
+    }
+  ]"
+  [imageMenu]="[
+    {
+      src: 'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+      date: '2023-03-16',
+      department: 'Marketing',
+      title: 'Boost your conversion rate',
+      description: 'Et et dolore officia quis nostrud esse aute cillum irure do esse. Eiusmod ad deserunt cupidatat est magna Lorem.'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
+      date:'2023-03-10',
+      department: 'Sales',
+      title: 'Hot to use search engine optimization to drive sales',
+      description: 'Optio cum necessitatibus dolor voluptatum provident commodi et.'
+    },
+
+  ]">
+</app-first-menu-component>
 
