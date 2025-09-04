@@ -33,3 +33,8 @@ export interface ImageMenu {
   title: string;
   description: string;
 }
+
+export interface SecondMenu {
+  title: string;
+  description: string;
+}

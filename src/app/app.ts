@@ -14,6 +14,8 @@ import { FooterComponent } from './Pricing-Pages/footer-component/footer-compone
 import { FirstCtaSectionComponent } from './CTA-Sections/first-cta-section-component/first-cta-section-component';
 import { SecondCtaSectionComponent } from './CTA-Sections/second-cta-section-component/second-cta-section-component';
 import { FirstMenuComponent } from './Flyout-Menus/first-menu-component/first-menu-component';
+import { SecondMenuComponent } from './Flyout-Menus/second-menu-component/second-menu-component';
+import { ThirdMenuComponent } from './Flyout-Menus/third-menu-component/third-menu-component';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +34,8 @@ import { FirstMenuComponent } from './Flyout-Menus/first-menu-component/first-me
     FirstCtaSectionComponent,
     SecondCtaSectionComponent,
     FirstMenuComponent,
+    SecondMenuComponent,
+    ThirdMenuComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

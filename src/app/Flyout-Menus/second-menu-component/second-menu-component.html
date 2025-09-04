@@ -1,0 +1,30 @@
+<div class="bg-gray-100 border border-gray-300 rounded-lg  h-[1500px] ">
+    <div class=" bg-white rounded-t-lg border border-gray-300">
+        <div class="flex flex-row font-semibold text-black md:w-[96%] w-[90%] mx-auto ">
+            <button class=" py-[3vh] " (click)="onExpandMenu()">Solutions
+                <span><app-icons [iconPrefix]="'fas'" [iconName]="'chevron-down'" [size]="'sm'" [classes]="'text-black ml-1'" /></span>
+            </button>
+            <p class="flex-1"></p>
+        </div>
+     @if(isExpanded()) {
+        <div class="grid grid-cols-4 gap-[3vw] w-[95%] mx-auto mt-[50px] mb-[40px]">
+            @for(item of menu(); track item.title) {
+                <button class="cursor:pointer hover:bg-gray-200 w-[60%] text-start p-[18px]">
+                    <div class="flex flex-col gap-2 ">
+                        <h3 class="text-black font-semibold">{{item.title}}</h3>
+                        <p class="text-gray-400">{{item.description}}</p>
+                    </div>
+                </button>
+            }
+        </div>
+        <div class="grid grid-cols-3 bg-gray-100 px-8">
+            @for(option of options(); track option){
+                <button class="text-center text-black font-semibold hover:bg-gray-300 border-x border-gray-300 py-3">{{option}}</button>
+            }
+        </div>
+    }
+    </div> 
+</div>
+
+
+
