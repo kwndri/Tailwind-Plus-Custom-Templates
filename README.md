@@ -1,3 +1,12 @@
+# Tailwind Components Practice
+
+This repository contains components that I build entirely with my own code, 
+inspired by public examples/designs from [Tailwind CSS](https://tailwindcss.com/plus).
+
+## Note
+- This project is purely **educational** and was created for the purpose of practicing Tailwind CSS.  
+- It does not include any code from **Tailwind UI** (the paid product), only my custom code using Angular20, Typescript and Tailwind CSS v.3.4.17
+
 # MyTestComponents
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
