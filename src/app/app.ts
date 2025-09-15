@@ -16,6 +16,8 @@ import { SecondCtaSectionComponent } from './CTA-Sections/second-cta-section-com
 import { FirstMenuComponent } from './Flyout-Menus/first-menu-component/first-menu-component';
 import { SecondMenuComponent } from './Flyout-Menus/second-menu-component/second-menu-component';
 import { ThirdMenuComponent } from './Flyout-Menus/third-menu-component/third-menu-component';
+import { NotFoundComponent } from './404-Pages/not-found-component/not-found-component';
+import { FirstSectionComponent } from './Contact-Sections/first-section-component/first-section-component';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +38,8 @@ import { ThirdMenuComponent } from './Flyout-Menus/third-menu-component/third-me
     FirstMenuComponent,
     SecondMenuComponent,
     ThirdMenuComponent,
+    NotFoundComponent,
+    FirstSectionComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

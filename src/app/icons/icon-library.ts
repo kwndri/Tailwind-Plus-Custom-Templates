@@ -12,6 +12,7 @@ import {
   faLocationDot,
   faArrowRight,
   faCheck,
+  faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -29,6 +30,7 @@ export function addIcons(library: FaIconLibrary) {
     faPlus,
     faMinus,
     faCheck,
-    faChevronDown
+    faChevronDown,
+    faArrowLeft
   );
 }
