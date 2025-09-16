@@ -18,6 +18,7 @@ import { SecondMenuComponent } from './Flyout-Menus/second-menu-component/second
 import { ThirdMenuComponent } from './Flyout-Menus/third-menu-component/third-menu-component';
 import { NotFoundComponent } from './404-Pages/not-found-component/not-found-component';
 import { FirstSectionComponent } from './Contact-Sections/first-section-component/first-section-component';
+import { SecondSectionComponent } from './Contact-Sections/second-section-component/second-section-component';
 
 @Component({
   selector: 'app-root',
@@ -40,6 +41,7 @@ import { FirstSectionComponent } from './Contact-Sections/first-section-componen
     ThirdMenuComponent,
     NotFoundComponent,
     FirstSectionComponent,
+    SecondSectionComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
