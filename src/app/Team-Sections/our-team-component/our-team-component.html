@@ -1,0 +1,24 @@
+<div class="border border-gray-200 rounded-xl px-6 py-[50px]  mx-auto bg-gray-900 mt-[20px] pb-[100px]">
+    <div class="flex flex-col items-center text-center gap-[20px]">
+        <h1 class="font-sans font-bold text-4xl text-white">Meet our team</h1>
+        <p class="text-gray-400 lg:w-1/2 w-full sm:w-2/3 font-sans">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
+    </div>
+    <div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-[2vw] mt-[50px] flex flex-col gap-[20px]">
+        @for(member of team(); track member.image) {
+            <div class="bg-gray-700  min-w-[250px] xs:min-w-[320px] xl:min-w-[400px] flex flex-col py-[30px] items-center rounded-xl gap-[20px] mx-auto">
+                <img [src]="member.image"
+                    class="xs:w-[200px] xs:h-[200px] rounded-full object-contain w-[150px] h-[150px]">
+                <div class="flex flex-col gap-[1px] text-center">
+                    <h3 class="text-white font-sans font-semibold text-md">{{member.name}}</h3>
+                    <p class="text-gray-400 font-sans text-sm">{{member.title}}</p>
+                </div>
+                <div class="flex flex-row gap-[18px]">
+                    <a href="#"><app-icons [iconPrefix]="'fab'" [iconName] = "'facebook'" [size]="'lg'" [classes]="'text-gray-300 '"/></a>
+                    <a href="#"><app-icons [iconPrefix]="'fab'" [iconName] = "'twitter'" [size]="'lg'" [classes]="'text-gray-300'"/></a>
+                </div>
+            </div>
+        }
+           
+        
+    </div>
+</div>

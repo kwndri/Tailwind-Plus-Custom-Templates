@@ -38,3 +38,9 @@ export interface SecondMenu {
   title: string;
   description: string;
 }
+
+export interface Team {
+  image: string;
+  name: string;
+  title: string;
+}

@@ -8,30 +8,24 @@
                  <p class="text-gray-300">We help companies and individuals build out their brand guidelines.</p>
             </div>
            
-            <form class="mt-[60px] w-[90%] ">
+            <form class="mt-[60px] w-[90%] " [formGroup]="contactForm">
                 <div class="sm:grid sm:grid-cols-2 w-full lg:gap-[1vw] gap-[2vw] " formGroupName="fullName">
                         <div class="flex flex-col gap-2 w-full  mb-[30px] md:mb-[0px]">
                             <label for="firstName" class=" font-semibold text-white text-sm">First Name</label>
                             <input type="text" formControlName="firstName" class="form-control bg-gray-800 rounded-md w-full p-1  border border-gray-900 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" id="firstName">
-                            <div *ngIf="firstName?.errors?.['required'] && firstName?.touched" class="text-red-400 text-sm mt-1">
-                                First Name is required.
-                            </div>
+                            
                         </div>
                         <div class="flex flex-col gap-2 w-full">
                             <label for="lastName" class=" font-semibold text-white text-sm">Last Name</label>
                             <input type="text" formControlName="lastName" class="form-control bg-gray-800 rounded-md w-full p-1  border border-gray-900 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" id="lastName">
-                            <div *ngIf="lastName?.errors?.['required'] && lastName?.touched" class="text-red-400 text-sm mt-1">
-                                Last Name is required.
-                            </div>
+                            
                         </div>
                 </div>
                 <div class="sm:grid sm:grid-cols-2 w-full lg:gap-[1vw] gap-[2vw] mt-[30px]">
                         <div class="flex flex-col gap-2 w-full  mb-[30px] md:mb-[0px]">
                             <label for="budget" class=" font-semibold text-white text-sm">Budget</label>
                             <input type="text" formControlName="budget" class="form-control bg-gray-800 rounded-md w-full p-1  border border-gray-900 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" id="budget">
-                            <div *ngIf="budget?.errors?.['required'] && budget?.touched" class="text-red-400 text-sm mt-1">
-                                Budget is required.
-                            </div>
+                            
                         </div>
                         <div class="flex flex-col gap-2 w-full">
                             <label for="website" class=" font-semibold text-white text-sm">Website</label>
