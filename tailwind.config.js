@@ -8,6 +8,9 @@ export const theme = {
     screens: {
       xs: "370px",
     },
+     colors: {
+        myPurple: "oklch(67.3% .182 276.935)",
+      },
   },
 };
 

@@ -1,0 +1,12 @@
+<div class="flex flex-col gap-[40px] sm:items-center mt-[150px] sm:px-[20px] pr-3">
+    <p class="font-sans text-white font-semibold sm:w-[80%] sm:self-center text-center sm:text-md">The world’s most innovative companies use our app</p>
+    <div class="flex flex-row gap-[30px] sm:gap-[40px]  flex-wrap md:max-w-[700px] lg:w-full lg:max-w-full xl:w-[95%] justify-evenly lg:justify-between mx-auto sm:items-center sm:justify-center">
+        @for(logo of company_logos; track logo) {
+            <div class="w-[140px] sm:w-[160px] xl:w-[200px] text-white">
+                <img [src]='logo'>
+                
+            </div>
+        }
+        
+    </div>
+</div>

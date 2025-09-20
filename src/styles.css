@@ -5,5 +5,6 @@
 body {font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
     font-feature-settings: var(--font-sans--font-feature-settings);
     font-variation-settings: initial;
+    background-color: black;
 
 }

@@ -5,6 +5,7 @@ import {
   faYoutube,
   faInstagram,
   faTwitter,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -19,6 +20,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export function addIcons(library: FaIconLibrary) {
   library.addIcons(
+    faGithub,
     faFacebook,
     faYoutube,
     faInstagram,

@@ -20,6 +20,7 @@ import { NotFoundComponent } from './404-Pages/not-found-component/not-found-com
 import { FirstSectionComponent } from './Contact-Sections/first-section-component/first-section-component';
 import { SecondSectionComponent } from './Contact-Sections/second-section-component/second-section-component';
 import { OurTeamComponent } from './Team-Sections/our-team-component/our-team-component';
+import { LandingPageComponent } from './Landing-Pages/landing-page-component/landing-page-component';
 
 @Component({
   selector: 'app-root',
@@ -44,6 +45,7 @@ import { OurTeamComponent } from './Team-Sections/our-team-component/our-team-co
     FirstSectionComponent,
     SecondSectionComponent,
     OurTeamComponent,
+    LandingPageComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
