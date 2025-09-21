@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { IconsComponent } from '../../icons/icons.component';
 import { CommonModule } from '@angular/common';
 import { MenuButtonComponent } from './menu-button-component/menu-button-component';
+import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -12,8 +13,13 @@ import { MenuButtonComponent } from './menu-button-component/menu-button-compone
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  private router = inject(Router);
 
   openMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  onClick() {
+    this.router.navigate(['/login']);
   }
 }
