@@ -13,11 +13,11 @@
                 <p class="font-sans text-gray-400">Please enter your details</p>
                 <form [formGroup]="form" (ngSubmit)="onSubmit()">
                     <div class="form-group flex flex-col gap-3  mx-auto mt-[25px]" >
-                        <label for="email" class="text-white font-semibold">Email</label>
-                        <input type="email" formControlName="email" class="text-white form-control rounded-md w-full p-[6px]  bg-gray-700 border border-gray-600 focus:border-indigo-400 focus:ring-indigo-400" id="email">
+                        <label for="email" class="text-white font-semibold">Username (email)</label>
+                        <input type="text" formControlName="email" class="text-white form-control rounded-md w-full p-[6px]  bg-gray-700 border border-gray-600 focus:border-indigo-400 focus:ring-indigo-400" id="email">
                     </div>
                     <div *ngIf="email?.errors?.['required'] && email?.touched" class="text-red-400 text-sm mt-2">
-                            Email is required.
+                            Username or email is required.
                     </div>
                     <div *ngIf="(!email?.errors?.['required']) && email?.touched && email?.invalid" class="text-red-400 text-sm mt-2">
                             Please enter a valid email address.
@@ -34,10 +34,10 @@
                             <input type="checkbox" formControlName="remember" class=" form-contr" id="remember">
                             <span class="text-white font-sans font-bold">Remember me</span>
                         </div>
-                        <a href="#" class="underline text-purple-800 font-semibold font-sans">Forgot Password</a>
+                        <a href="#" class="underline text-purple-900 font-semibold font-sans">Forgot Password</a>
                     </div>
                     <button type="submit" [disabled]="form.invalid" class="disabled:bg-gray-600 disabled:cursor-not-allowed text-center p-[6px] bg-blue-600 hover:bg-blue-400 text-white w-full rounded-lg mt-[25px]">Sign in</button>
-                    <p class="text-center text-sm font-sans text-gray-400 pt-[25px]">Don't have an account? <a class="pl-[3px] underline text-purple-800 font-semibold font-sans">Sign up</a></p>
+                    <p class="text-center text-sm font-sans text-white pt-[25px]">Don't have an account? <a class="pl-[3px] underline text-purple-900 font-semibold font-sans"  routerLink="/signup" routerLinkActive="text-purple-600">Sign up</a></p>
                 </form>
             </div>
         </div>
