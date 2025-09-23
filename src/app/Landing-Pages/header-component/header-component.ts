@@ -2,12 +2,12 @@ import { Component, inject } from '@angular/core';
 import { IconsComponent } from '../../icons/icons.component';
 import { CommonModule } from '@angular/common';
 import { MenuButtonComponent } from './menu-button-component/menu-button-component';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-header-component',
-  imports: [IconsComponent, CommonModule, MenuButtonComponent],
+  imports: [IconsComponent, CommonModule, MenuButtonComponent, RouterModule],
   templateUrl: './header-component.html',
   styleUrl: './header-component.css',
 })
@@ -21,5 +21,9 @@ export class HeaderComponent {
 
   onClick() {
     this.router.navigate(['/login']);
+  }
+
+  onHomePage() {
+    this.router.navigate(['/']);
   }
 }

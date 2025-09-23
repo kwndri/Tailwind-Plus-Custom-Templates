@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-menu-button-component',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './menu-button-component.html',
   styleUrl: './menu-button-component.css',
 })

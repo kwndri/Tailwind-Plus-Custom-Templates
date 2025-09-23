@@ -3,6 +3,7 @@ import { NotFoundComponent } from './404-Pages/not-found-component/not-found-com
 import { LandingPageComponent } from './Landing-Pages/landing-page-component/landing-page-component';
 import { LoginComponent } from './Login-Page/login-component/login-component';
 import { SignUpComponent } from './Landing-Pages/sign-up-component/sign-up-component';
+import { PricingPageComponent } from './Pricing-Pages/second-example/pricing-page-component/pricing-page-component';
 
 export const routes: Routes = [
   {
@@ -21,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'signup',
     component: SignUpComponent,
+  },
+  {
+    path: 'prices',
+    component: PricingPageComponent,
   },
   {
     path: '**',

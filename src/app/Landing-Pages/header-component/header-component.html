@@ -1,9 +1,11 @@
 <div class="flex flex-row justify-between pl-3 py-5 pr-5">
-    <img src="Tailwind_CSS_Logo.svg.png" class="w-[40px] h-[40px] object-contain">
+    <button (click)="onHomePage()">
+        <img src="Tailwind_CSS_Logo.svg.png" class="w-[40px] h-[40px] object-contain">
+    </button>
     <div class="hidden  lg:flex lg:flex-row   lg:flex-1 lg:justify-center lg:gap-[60px] lg:font-semibold lg:pt-[5px] lg:text-white">
         <a href="#">Product</a>
         <a href="#">Features</a>
-        <a href="#">Markertplace</a>
+        <a [routerLink]="'prices'">Prices</a>
         <a href="#">Company</a>
     </div>
     <button (click)='onClick()' class="hidden lg:inline-flex group font-semibold text-white">Log in
@@ -33,7 +35,7 @@
         <div class="flex flex-col gap-[10px] pr-[25px]">
             <app-menu-button-component [option]="'Product'"></app-menu-button-component>
             <app-menu-button-component [option]="'Features'"></app-menu-button-component>
-            <app-menu-button-component [option]="'Marketplace'"></app-menu-button-component>
+            <app-menu-button-component [option]="'Prices'"></app-menu-button-component>
             <app-menu-button-component [option]="'Company'"></app-menu-button-component>
             <div class="pl-3 my-[15px] mb-[15px]">
                 <hr class="h-[2px] border-gray-700 w-full border-t" />

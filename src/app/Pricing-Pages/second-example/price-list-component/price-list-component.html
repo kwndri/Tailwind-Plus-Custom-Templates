@@ -1,0 +1,29 @@
+<div class="flex items-center justify-center mt-[60px] mb-[40px]">
+  <div class="flex rounded-full border border-gray-300 bg-gray-900 p-1">
+    <button
+      (click)="setBilling('monthly')"
+      [ngClass]="selected === 'monthly' 
+        ? 'bg-myPurple text-white' 
+        : 'text-gray-600 hover:text-myPurple'"
+      class="px-4 py-1 rounded-full font-medium transition-colors"
+    >
+      Monthly
+    </button>
+
+    <button
+      (click)="setBilling('annually')"
+      [ngClass]="selected === 'annually' 
+        ? 'bg-myPurple text-white' 
+        : 'text-gray-600 hover:text-myPurple'"
+      class="px-4 py-1 rounded-full font-medium transition-colors"
+    >
+      Annually
+    </button>
+  </div>
+</div>
+<div class=" flex flex-col gap-[20px] max-w-lg lg:max-w-[1600px] mx-auto  lg:grid lg:grid-cols-3 lg:gap-8">
+    @for(item of pricing_catalog(); track item.title) {
+         <app-pricing-card-component [price_option]="item" [payment_option]="selected"></app-pricing-card-component>
+    }
+</div>
+
