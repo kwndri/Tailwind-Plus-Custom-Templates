@@ -29,7 +29,7 @@ export const routes: Routes = [
     component: PricingPageComponent,
   },
   {
-    path: 'about',
+    path: 'company',
     component: AboutPageComponent,
   },
   {
