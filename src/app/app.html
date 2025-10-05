@@ -1,8 +1,9 @@
+<!-- custom implementation of Prices Pages with title four tiers 
+ https://tailwindcss.com/plus/ui-blocks/marketing/page-examples/pricing-pages
 
-<!-- HTML for page section
 <div class="border border-1 border-gray-300 rounded-xl m-3 pl-[20px] pr-[20px]">
     <div class="mx-auto">
-         <app-header-component></app-header-component>
+        <app-header-component></app-header-component>
         <app-pricing-description-component></app-pricing-description-component>
         <app-pricing-list-component></app-pricing-list-component>
         <app-ceo-quote-component></app-ceo-quote-component>
@@ -12,7 +13,43 @@
 </div>
 -->
 
-<!-- HTML code for first menu component of Flyout Page
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/cta-sections 
+with title Split with image
+<app-first-cta-section-component></app-first-cta-section-component>
+-->
+
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/cta-sections 
+with title Simple justified on subtle brand
+<app-second-cta-section-component></app-second-cta-section-component>
+-->
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/faq-sections 
+with title Centered accordion
+<app-first-faq></app-first-faq>
+-->
+
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/faq-sections 
+with title Three columns with centered introduction
+<app-second-faq></app-second-faq>
+-->
+
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/heroes with
+title With three tiers and testimonials
+<app-hero-sections></app-hero-sections>
+-->
+
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/page-examples/pricing-pages with 
+title With three tiers and testimonials
+<app-pricing-page-component></app-pricing-page-component>
+-->
+
+
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/elements/flyout-menus with title full-width two-columns
 <app-first-menu-component 
   [menu]="[
     {
@@ -42,10 +79,11 @@
 
   ]">
 </app-first-menu-component>
+
 -->
 
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/elements/flyout-menus with title full-width 
 
-<!--HTML code for second flyout menu
 <app-second-menu-component [menu]="[{
   title:'Analytics',
   description: 'Get a better understanding og where your traffic is coming from'
@@ -61,21 +99,36 @@
   title:'Integrations',
   description:'Connect with third-party tools that you are already using'
 }]"></app-second-menu-component>
+
 -->
- <!--
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/elements/flyout-menus with 
+title Stcked with footer list
 <app-third-menu-component></app-third-menu-component>
 -->
 
-<!--app-first-section-component></app-first-section-component>-->
-<!--<app-second-section-component></app-second-section-component>-->
-<!--<app-our-team-component></app-our-team-component>-->
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/contact-sections with
+title Split with image
+<app-first-section-component></app-first-section-component>
+-->
+
+<!--https://tailwindcss.com/plus/ui-blocks/marketing/sections/contact-sections with title With testimonial
+<app-second-section-component></app-second-section-component>
+-->
+
+<!--custom implementation of https://tailwindcss.com/plus/ui-blocks/marketing/sections/team-sections with title 
+large grid with cards
+<app-our-team-component></app-our-team-component>
+-->
 
 
 <!--This router outlet is for the landing page implementation. Log in and signup component with navigation has been implemented
  Please also click the prices option to check also my prices page!-->
- 
-<div class="bg-gradient-to-r from-zinc-900 via-gray-500 to-zinc-700 pl-5 ">
+ <div class="bg-gradient-to-r from-zinc-900 via-gray-500 to-zinc-700 pl-5 ">
   <app-header-component></app-header-component>
   <router-outlet></router-outlet>
   <app-footer-component></app-footer-component>
 </div>
+
+ 
+

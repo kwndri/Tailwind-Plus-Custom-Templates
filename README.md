@@ -1,10 +1,21 @@
 # Tailwind Components Practice
 
-This repository contains components that I build entirely with my own code, 
+This repository contains components that I build entirely with my own code,
 inspired by public examples/designs from [Tailwind CSS](https://tailwindcss.com/plus).
+Inside app.html you can find inside comments a lot of mine custom implementations and the url from there they were inspired.
+In this project i implemented a landing page, a price page, an about page and a not-found page from inspired from Tailwind Plus. Also i implemented a Login page and a Signup page for demo purposes.
+All the components of the project are implemented responsively for all kind of screens.
 
 ## Note
-- This project is purely **educational** and was created for the purpose of practicing Tailwind CSS.  
+
+- Not every link is working in this project. You can select the prices and about in the header menu to navigate to the appropiate pages.
+- By clicking the login you can navigate to the login page.
+- By clicking the signup you can navigate to signup page.
+- In the login page when clicking the forgot password button a pop up is appeared
+
+## Note
+
+- This project is purely **educational** and was created for the purpose of practicing Tailwind CSS.
 - It does not include any code from **Tailwind UI** (the paid product), only my custom code using Angular20, Typescript and Tailwind CSS v.3.4.17
 
 # MyTestComponents

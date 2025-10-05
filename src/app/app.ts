@@ -21,6 +21,8 @@ import { OurTeamComponent } from './Team-Sections/our-team-component/our-team-co
 import { LandingPageComponent } from './Landing-Pages/landing-page-component/landing-page-component';
 import { HeaderComponent } from './Landing-Pages/header-component/header-component';
 import { FooterComponent } from './Landing-Pages/footer-component/footer-component';
+import { PricingPageComponent } from './Pricing-Pages/second-example/pricing-page-component/pricing-page-component';
+import { AboutPageComponent } from './About-Pages/about-page-component/about-page-component';
 
 @Component({
   selector: 'app-root',
@@ -46,6 +48,8 @@ import { FooterComponent } from './Landing-Pages/footer-component/footer-compone
     LandingPageComponent,
     HeaderComponent,
     FooterComponent,
+    PricingPageComponent,
+    AboutPageComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
